@@ -14,9 +14,9 @@ document.getElementById("stampaPc").innerHTML = "Numero avversario: " + numPc;
 var esito = "Pareggio, nessun vincitore!";
 
 if (numUmano > numPc){
-    esito = "Hai vinto!"
+    esito = "Hai vinto!";
 } else if (numUmano < numPc){
-    esito = "Hai perso!"
+    esito = "Hai perso!";
 }
 // console.log(esito);
-alert(esito)
+alert(esito);
