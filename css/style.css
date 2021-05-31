@@ -1,6 +1,83 @@
-GRAFICA:
-1) Sfondo due draghi, compare alert("Ciao! xxx (far inserire il nome sarebbe il max, prompt")
+/* Reusable */
 
-.wrapper{
-    background-image: url("");
+.font_bold{
+    font-weight:bold;
 }
+
+.font_2em{
+    font-size:2em;
+}
+
+/* Carousel */
+.carousel-item img {
+    width:100%;
+    height:100vh;
+}
+
+/* I welcome */
+
+.text_red{
+    color: #2c1e1d;
+}
+
+.text_yellow{
+    color: #2f151a;
+}
+
+/* II Bulma infos */
+
+.text_white{
+    color:#fff;
+}
+  
+  .typing_demoA {
+    width: 16ch;
+    animation: typing 4s steps(18), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    background-color: aliceblue;
+    color:#0b6aa0;
+  }
+  
+  #showMe {
+    animation: cssAnimation 0s 5s forwards;
+    visibility: hidden;
+  }
+  
+  
+  @keyframes cssAnimation {
+    to   { visibility: visible; }
+  }
+
+  .typing_demoB {
+    width: 69ch;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    background-color: #0b6aa0;
+    color:aliceblue;
+    border-radius:10px;
+  }
+
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
+
+  /* dragon radar */
+
+  .bg_lightblue{
+    background-color: #2da2a8;
+  }
+
+  #start:on

@@ -1,13 +1,4 @@
-// Dò il benvenuto al giocatore con una finestra 
-//modale, poi compare sfondo drago Shenron. 
-// 2) Fa comparire un fumetto, 
-// "Benvenuto! Io sono Shenron. Sfidami nell'antica 
-//  rappresentazione del fato dei dadi, per decidere
-//  le sorti dell'umanità." 
 
-//  bottone accetta con lampadina accesa, spenta no
-// Rifiuta: modale con "Cosa ci fai qui? Here?s a potatoe!!"
-// se accetta, parte gioco.
 // Genero numero random giocatore
 var numUmano = Math.floor(Math.random() * 6) + 1;
 // console.log("Numero giocatore", numUmano);
@@ -27,8 +18,10 @@ if (numUmano > numPc){
 } else if (numUmano < numPc){
     esito = "Hai perso!";
 }
+
+document.getElementById("esito").innerHTML = esito;
 // console.log(esito);
-alert(esito);
+// alert(esito);
 
 // XX) Finestra modale tenera si saluto: "È stato 
 // bello per te come lo è stato per me?"
