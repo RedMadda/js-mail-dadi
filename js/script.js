@@ -1,36 +1,45 @@
 
-// Genero numero random giocatore
-var numUmano = Math.floor(Math.random() * 6) + 1;
-// console.log("Numero giocatore", numUmano);
-document.getElementById("stampaUmano").innerHTML = "Numero giocatore: " + numUmano;
+// play
+function play(){
+    // Genero numero random giocatore
+    var numUmano = Math.floor(Math.random() * 6) + 1;
+    // console.log("Numero giocatore", numUmano);
+    document.getElementById("stampaUmano").innerHTML = "Numero giocatore: " + numUmano;
 
-// Genero numero pc
-var numPc = Math.floor(Math.random() * 6) + 1;
-// console.log("Numero avversario", numPc);
-document.getElementById("stampaPc").innerHTML = "Numero avversario: " + numPc;
+    // Genero numero pc
+    var numPc = Math.floor(Math.random() * 6) + 1;
+    // console.log("Numero avversario", numPc);
+    document.getElementById("stampaPc").innerHTML = "Numero avversario: " + numPc;
 
 
-// stabilire vincitore
-var esito = "Pareggio, nessun vincitore!";
+    // stabilire vincitore
+    var esito = "Nessuno, pareggio!";
+    if (numUmano > numPc){
+        esito = "Tu! Hai vinto!";
+    } else if (numUmano < numPc){
+        esito = "L'avversario...Hai perso!";
+    }
 
-if (numUmano > numPc){
-    esito = "Hai vinto!";
-} else if (numUmano < numPc){
-    esito = "Hai perso!";
+    document.getElementById("esito").innerHTML = esito;
+
+    
 }
 
-document.getElementById("esito").innerHTML = esito;
-// console.log(esito);
-// alert(esito);
-
-// XX) Finestra modale tenera si saluto: "È stato 
-// bello per te come lo è stato per me?"
-
-// XX) Allora rigiochiamo, basta ricaricare la pagina!")  
-// XX) Altra finestra modale con sfondo le sfere
-//      del drago e macchinetta per trovarle.
-//      messaggio:"Meglio che dover ritrovare le 
-//      sfere del drago, no? :)" "Clicca la rotellina
-//      in alto a destra, e risfidami, terrestre!"
 
 
+var counterVal = 0;
+
+function incrementClick() {
+    updateDisplay(++counterVal);
+}
+
+
+function updateDisplay(val) {
+    var singPlur;
+    if(val == 1){
+        singPlur = "volta!"
+    } else {
+        singPlur = "volte!"
+    }
+    document.getElementById("times").innerHTML = "Hai giocato " + val + " " + singPlur;
+}

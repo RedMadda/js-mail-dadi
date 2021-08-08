@@ -33,7 +33,7 @@
                 <img src="img/bulma.jpg" class="d-block w-100" alt="Bulma welcome">
                 <div class="carousel-caption d-none d-md-block ">
                   <h5 class="display-3 fw-bold text_blue typing_demoA">"Hi, I'm Bulma!"</h5>
-                  <p id="showMe" class="typing_demoB">We need to bring Goku back, and Krili too, if there's time. Let'go!!</p> 
+                  <p id="showMe" class="typing_demoB">Dobbiamo resuscitare Goku, e magari anche Krili!</p> 
                 </div>
               </div>
 
@@ -55,7 +55,7 @@
                 <img src="img/sfere.png" class="d-block w-100" alt="clouds">
                 <div class="carousel-caption d-none d-md-block">
                   <h5 class="fw-bold display-5">"Pronto per partire  alla ricerca?"</h5>
-                  <p class="d-flex justify-content-center"><button id="start" type="button" class="btn btn-danger"><a id="start_game" href="#start_game"> Start</a></button></p>
+                  <p class="d-flex justify-content-center"><button id="start" type="button" class="btn btn-info"><a id="start_game" href="#start_game"> Start</a></button></p>
                 </div>
               </div>
 
@@ -71,10 +71,15 @@
           </div>
     </sectionI>
     
-    <div id="start_game">
+    <div id="start_game" class="pb-5">
       <div id="stampaUmano"></div>
       <div id="stampaPc"></div>
-      <div id="esito"></div>
+      <div id="esito">Chi vincerà?</div>
+
+      <button type="button" id="btn_play" class="btn btn-info rounded px-5" onclick="play();incrementClick()">Gioca!</button>
+
+      <div id="times"></div>
+      
     </div>
     <!-- bootstrap  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
